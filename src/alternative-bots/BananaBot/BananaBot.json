@@ -1,0 +1,10 @@
+{
+  "name": "Banana Bot",
+  "version": "1.0",
+  "authors": ["13523127"],
+  "description": "Just banana, and slippery",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}
