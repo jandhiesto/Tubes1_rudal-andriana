@@ -1,0 +1,10 @@
+{
+  "name": "Toowin",
+  "version": "1.0",
+  "authors": ["Joel Hotlan"],
+  "description": "Get the highest score",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}
