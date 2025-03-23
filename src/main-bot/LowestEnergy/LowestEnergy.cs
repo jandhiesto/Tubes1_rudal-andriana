@@ -3,16 +3,15 @@ using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
-
-public class SDS : Bot
+public class LowestEnergy : Bot
 {
 
     static void Main(string[] args)
     {
-        new SDS().Start();
+        new LowestEnergy().Start();
     }
 
-    SDS() : base(BotInfo.FromFile("SDS.json")) { }
+    LowestEnergy() : base(BotInfo.FromFile("LowestEnergy.json")) { }
     int targetId = -1;
     double targetEnergy = 999;
     bool shot= false;
@@ -47,7 +46,6 @@ public class SDS : Bot
 
     public override void OnScannedBot(ScannedBotEvent e)
     {
-        // Ambil informasi tentang robot yang terdeteksi
         double energy = e.Energy;
         int id = e.ScannedBotId;
         var distance = DistanceTo(e.X, e.Y);
@@ -71,12 +69,10 @@ public class SDS : Bot
         }else{
             Fire(1);
         }
-        
     }
 
     public override void OnBotDeath(BotDeathEvent e)
     {
-        // Reset target jika target mati
         if (e.VictimId == targetId) {
             targetId = -1;
             targetEnergy = 999;
