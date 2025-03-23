@@ -1,8 +1,8 @@
 {
   "name": "Aufklarungspanzerwagen",
   "version": "1.0",
-  "authors": ["Ivant Samuel"],
-  "description": "Teknologi Jerman. Bergerak secara dinamis dan akan track dan menembak musuh yang terdeteksi",
+  "authors": ["Rudal-Andriana-1"],
+  "description": "Teknologi Jerman. Bergerak secara dinamis dan akan track dan menembak musuh yang terdeteksi.",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 6.0",
