@@ -1,0 +1,10 @@
+{
+  "name": "Rudal_Andriana_2",
+  "version": "1.0",
+  "authors": ["Joel", "Boye", "Ivant"],
+  "description": "Just banana, and slippery",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}

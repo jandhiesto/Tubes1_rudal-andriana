@@ -1,10 +1,10 @@
 {
-  "name": "Rudal_Andriana_2",
+  "name": "LowestEnergy",
   "version": "1.0",
-  "authors": ["Joel", "Boye", "Ivant"],
-  "description": "Just banana, and slippery",
+  "authors": ["Joel Hotlan"],
+  "description": "Fire bot with the lowest energy.",
   "homepage": "",
   "countryCodes": ["id"],
-  "platform": ".Net 9.0",
+  "platform": ".Net 6.0",
   "programmingLang": "C# 10.0"
 }
