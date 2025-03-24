@@ -26,7 +26,7 @@ public class Rudal_Andriana_3 : Bot
         {
             MoveToCenter();
 
-            TurnGunLeft(180);
+            TurnGunLeft(10);
         }
     }
 
