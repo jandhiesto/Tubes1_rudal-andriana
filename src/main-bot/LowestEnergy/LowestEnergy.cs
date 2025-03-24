@@ -5,6 +5,9 @@ using Robocode.TankRoyale.BotApi.Events;
 
 public class LowestEnergy : Bot
 {
+    int targetId = -1;
+    double targetEnergy = 999;
+    int times = 0;
 
     static void Main(string[] args)
     {
@@ -12,10 +15,7 @@ public class LowestEnergy : Bot
     }
 
     LowestEnergy() : base(BotInfo.FromFile("LowestEnergy.json")) { }
-    int targetId = -1;
-    double targetEnergy = 999;
-    bool shot= false;
-    int times = 0;
+    
    
     public override void Run()
     {
@@ -25,22 +25,18 @@ public class LowestEnergy : Bot
         BulletColor = Color.Red;
         ScanColor = Color.Red;
 
-
         while (IsRunning)
         {
             TurnGunLeft(360);
-            if (!shot){
-                times++;
-            }
-            
-            if (times >= 4 && !shot){
+            times++
+
+            if (times >= 3){
                 targetId = -1;
                 targetEnergy = 999;
                 times = 0;
             }
-            shot = false;
+            
             Forward(100);
-
         }
     }
 
@@ -86,13 +82,10 @@ public class LowestEnergy : Bot
     }
 
     public override void OnHitBot(HitBotEvent e){
-        Interruptible=true;
-        TurnRight(180);
+        TurnRight(90);
     }
 
     public override void OnBulletFired(BulletFiredEvent e){
-        shot = true;
+        times--;
     }
-
-
 }
