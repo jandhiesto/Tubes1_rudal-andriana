@@ -42,9 +42,10 @@ public class Toowin : Bot
             Fire(2);
         }else{
             
-            Fire(3.5);
+            Fire(1);
         }
         TurnToFaceTarget(e.X,e.Y);
+        Forward(10);
     }
 
 
@@ -73,10 +74,8 @@ public class Toowin : Bot
 
     public override void OnHitWall(HitWallEvent e)
     {
-        Interruptible = true;
         TurnLeft(40);
         Forward(80);
-       
     }
 
     public override void OnWonRound(WonRoundEvent e)
