@@ -24,7 +24,8 @@ public class Toowin : Bot
 
               
         while (IsRunning)
-        {
+        {   
+            // Greedy Movement: Move zig-zag
             SetTurnLeft(400);
             Forward(200);
             SetTurnRight(400);
@@ -34,7 +35,8 @@ public class Toowin : Bot
 
    
     public override void OnScannedBot(ScannedBotEvent e)
-    {
+    {   
+        // Greedy Shooting: Shoot at the closer bot with higher power
         Interruptible = true;
         if (DistanceTo(e.X, e.Y) < 100 && DistanceTo(e.X, e.Y) >= 0)
         {
@@ -45,6 +47,8 @@ public class Toowin : Bot
             
             Fire(1);
         }
+
+        // Greedy Movement: Move towards the scanned bot
         FaceTarget(e.X,e.Y);
         Forward(10);
     }
@@ -52,6 +56,7 @@ public class Toowin : Bot
 
     public override void OnHitBot(HitBotEvent e)
     {
+        // Greedy Evasion: Move away from the hit bot
         var bearing = GunBearingTo(e.X, e.Y);
         if (bearing >= 140 || bearing <= -140)
         {
@@ -64,12 +69,12 @@ public class Toowin : Bot
             SetTurnRight(80);
             Back(80);
         }
-        
     }
     
 
     public override void OnHitWall(HitWallEvent e)
-    {
+    {   
+        // Greedy Wall Avoidance: Move away from the wall
         Interruptible = true;
         TurnLeft(40);
         Forward(80);
@@ -81,7 +86,8 @@ public class Toowin : Bot
     }
 
     private void FaceTarget(double x, double y)
-    {
+    {   
+        // Greedy Movement: Turn towards the target
         var bearing = BearingTo(x, y);
         if (bearing >= 0)
         {
