@@ -53,7 +53,7 @@ Setiap anggota kelompok bertanggung jawab atas bagian tertentu dalam proyek ini,
 - **Ivant Silaban**: Implementasi strategi *Greedy by Targeting and Fire*.
 
 ## Lisensi
-Proyek ini dibuat untuk pemenuhan tugas besar 1 dalam mata kuliah *IF 2240 - Strategi Algoritma*.
+Proyek ini dibuat untuk pemenuhan tugas besar 1 dalam mata kuliah *IF 2211 - Strategi Algoritma*.
 
 ---
 
