@@ -1,0 +1,10 @@
+{
+  "name": "Rudal_Andriana_3",
+  "version": "1.0",
+  "authors": ["Joel, Boye, Ivant"],
+  "description": "Rudal Mas Andriana (Bukan Andre). Bergerak secara dinamis dan akan track dan menembak musuh yang terdeteksi.",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 6.0",
+  "programmingLang": "C# 10.0"
+}
