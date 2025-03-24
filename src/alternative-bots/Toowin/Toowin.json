@@ -1,8 +1,8 @@
 {
-  "name": "Toowin",
+  "name": "Rudal_Andriana_1",
   "version": "1.0",
-  "authors": ["Joel Hotlan"],
-  "description": "Bergerak Dinamis dan akan mengikuti musuh yang terdeteksi",
+  "authors": ["Joel", "Boye", "Ivant"],
+  "description": "Bergerak dinamis dan akan mengikuti musuh yang terdeteksi",
   "homepage": "",
   "countryCodes": ["id"],
   "platform": ".Net 6.0",
