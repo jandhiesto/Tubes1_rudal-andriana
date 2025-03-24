@@ -3,15 +3,15 @@ using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
-public class LowestEnergy : Bot
+public class Rudal_Andriana_2 : Bot
 {
 
     static void Main(string[] args)
     {
-        new LowestEnergy().Start();
+        new Rudal_Andriana_2().Start();
     }
 
-    LowestEnergy() : base(BotInfo.FromFile("LowestEnergy.json")) { }
+    Rudal_Andriana_2() : base(BotInfo.FromFile("Rudal_Andriana_2.json")) { }
     int targetId = -1;
     double targetEnergy = 999;
     bool shot= false;

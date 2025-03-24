@@ -3,15 +3,15 @@ using System.Drawing;
 using Robocode.TankRoyale.BotApi;
 using Robocode.TankRoyale.BotApi.Events;
 
-public class Toowin : Bot
+public class Rudal_Andriana_1 : Bot
 {
     
     static void Main(string[] args)
     {
-        new Toowin().Start();
+        new Rudal_Andriana_1().Start();
     }
 
-    Toowin() : base(BotInfo.FromFile("Toowin.json")) { }
+    Rudal_Andriana_1() : base(BotInfo.FromFile("Rudal_Andriana_1.json")) { }
 
     public override void Run()
     {

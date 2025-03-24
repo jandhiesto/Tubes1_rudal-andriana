@@ -6,25 +6,25 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 
-public class BananaBot : Bot
+public class Rudal_Andriana_Main : Bot
 {
     static void Main(string[] args)
     {
         // Membaca berkas konfigurasi dari direktori saat ini
         var builder = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("BananaBot.json");
+            .AddJsonFile("Rudal_Andriana_Main.json");
 
         // Membaca konfigurasi ke dalam instansi BotInfo
         var config = builder.Build();
         var botInfo = BotInfo.FromConfiguration(config);
 
         // Membuat dan memulai bot berdasarkan informasi bot
-        new BananaBot(botInfo).Start();
+        new Rudal_Andriana_Main(botInfo).Start();
     }
 
     // Konstruktor yang menerima BotInfo dan meneruskannya ke kelas dasar
-    private BananaBot(BotInfo botInfo) : base(botInfo) {}
+    private Rudal_Andriana_Main(BotInfo botInfo) : base(botInfo) {}
 
     private int jariJari = 500; // Radius awal pergerakan
     private int arahPerubahanJariJari = 100; // Kecepatan perubahan radius
